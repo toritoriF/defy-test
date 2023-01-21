@@ -21,9 +21,12 @@ th {
     font-size: 1.2em;
 }
 
-/*********	840px〜481px	tyu	*/
+/*********	〜840px	*/
 @media screen and (max-width: 834px){
 table {
+	    border: solid 1px;
+    border-collapse: collapse;
+    white-space: nowrap;
     width: 95%;
     margin-left: auto;
     margin-right: auto;
@@ -33,6 +36,7 @@ table {
 	
 /********* 834px〜481px（ダークモード）tyudm */	
 @media (prefers-color-scheme: dark) {
+    background-color: #ddd;
 
 
 		}
