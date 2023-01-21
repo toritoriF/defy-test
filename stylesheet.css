@@ -25,7 +25,33 @@ td {
     padding: 8px 8px 8px 12px;
 }
 
-/* mobile */
+/*** footer */
+footer {
+    position: fixed;
+    width: 100%;
+    background: #0b4613;
+    padding: 13px 0;
+    bottom: 0;
+    left: 0;
+}
+
+/** pagination */
+#paging {
+    text-align: center;
+    bottom: 0;
+}
+#prevbtn, #nextbtn {
+    padding: 5px 15px;
+    margin-right: 20px;
+    background: #d8d8d8;
+    border-radius: 6px;
+    border: inherit;
+    box-shadow: 2px 2px 0px #595959, -2px -2px 0px #9f9f9f, -2px 2px 0px #4b4b4b, 2px -2px 0px #b9b9b999;
+    color: #355c36;
+}
+
+
+/*** mobile */
 @media screen and (max-width: 834px){
     
 body {
