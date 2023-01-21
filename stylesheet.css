@@ -55,7 +55,7 @@ input#button {
     font-size: 12px;
     color: #fff;
     border: inherit;
-    box-shadow: -1px -1px #888888, 1px -1px #9355ba, 1px 1px #3d3d3d, -1px 1px #106f05;
+    box-shadow: -1px -1px #888888, 1px 1px #3d3d3d, -1px 1px #106f05, 1px -1px #9355ba;
     background: linear-gradient(5deg, #000000, #2b2b2b);
 }
 
