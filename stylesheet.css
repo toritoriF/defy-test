@@ -43,7 +43,7 @@ input#address {
     border-radius: 4px;
     color: #a9a9a9;
     border: inherit;
-    background: linear-gradient(-135deg, #2f1e1e, #000000) fixed;
+    background: linear-gradient(-135deg, #1f1f1f, #0a0a0a) fixed;
     box-shadow: 2px 2px #1a1a1a inset, -2px -2px #222222 inset;
 }
 input::placeholder {
