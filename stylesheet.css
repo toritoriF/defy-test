@@ -9,6 +9,13 @@ table {
     color: #4caf50;
 
 }
+th {
+    background: #212121;
+    font-weight: bold;
+    border: solid 1px #355c36;
+    padding: 8px;
+    font-size: 12px;
+}
 tr {
     padding: 10px;
 }
@@ -17,26 +24,17 @@ td {
     width: auto;
     padding: 8px 8px 8px 12px;
 }
-th {
-    background: #212121;
-    font-weight: bold;
-    border: solid 1px #355c36;
-    padding: 8px;
-    font-size: 12px;
-}
+
 /* mobile */
 @media screen and (max-width: 834px){
     
 body {
     font-size: 12px;
 }
-th {
-    background: #212121;
-    font-weight: bold;
-    border: solid 1px #222;
-    padding: 8px;
-    font-size: 12px;
-}   
+td {
+    border: solid 1px #458747a6;
+    border: solid 1px #4587472e;
+} 
 table {
     width: 95%;
     margin-left: auto;
