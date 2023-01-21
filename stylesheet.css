@@ -1,13 +1,13 @@
 body {
     background: #000;
-    color: #4caf50;
     color: #ddd;
     font-family: helvetica;
 }
 table {
-    border: solid 1px #4caf50;
     border-collapse: collapse;
     white-space: nowrap;
+    color: #4caf50;
+
 }
 tr {
     padding: 10px;
@@ -20,9 +20,8 @@ td {
 th {
     background: #212121;
     font-weight: bold;
-    border: solid 1px;
+    border: solid 1px #4caf50;
     padding: 8px;
-    font-size: 12px;
 }
 /* mobile */
 @media screen and (max-width: 834px){
