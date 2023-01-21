@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <title>DEFY Loot Items Log</title>
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("#response").html("Response Values");
+
+            $("#button").click(function () {
+                var url = "https://api.polygonscan.com/api?module=account&apikey=6H4TB6SFDM6K72KGM46VHXU8X51VM4KH6C&action=token1155tx&startblock=1&endblock=99999999&sort=desc&address=" + $("#address").val();
+
+                $.ajax({
+                    type: 'get',
+                    url: url,
+                    scriptCharset: 'utf-8',
+                    success: function (data) {
+
+                        json = data.result;
+                        // table要素を生成
+                        var table = document.createElement('table');
+
+                        // ヘッダーを作成
+                        var tr = document.createElement('tr');
+
+                        var th = document.createElement('th');
+                        th.textContent = "timeStamp";
+                        tr.appendChild(th);
+                        var th = document.createElement('th');
+                        th.textContent = "Item Name";
+                        tr.appendChild(th);
+                        var th = document.createElement('th');
+                        th.textContent = "Amount";
+                        tr.appendChild(th);
+
+                        // tr要素をtable要素の子要素に追加
+                        table.appendChild(tr);
+
+                        // テーブル本体を作成
+                        for (var i = 0; i < json.length; i++) {
+                            if (json[i]["contractAddress"] == "0x0b5cfed5efb6f831468b8b5b5321b71825a2aee0" && json[i]["from"] == "0x0000000000000000000000000000000000000000") {
+                                // tr要素を生成
+                                var tr = document.createElement('tr');
+                                // th・td部分のループ
+                                for (key in json[0]) {
+                                    if (key == "timeStamp" || key == "tokenID" || key == "tokenValue") {
+                                        // td要素を生成
+                                        var td = document.createElement('td');
+                                        if (key == "timeStamp") {
+                                            var time = new Date(json[i][key] * 1000)
+                                            // td要素内にテキストを追加
+                                            td.textContent = String(time.getFullYear()) + "/" + String(time.getMonth() + 1) + "/" + String(time.getDate()) + " " + String(time.getHours()) + ":" + String(time.getMinutes()) + ":" + String(time.getSeconds()) + " UTC";
+                                        }
+                                        else if (key == "tokenID") {
+                                            // td要素内にテキストを追加
+                                            switch (json[i][key]) {
+                                                case "10000":
+                                                    td.textContent = "Scrap Metal";
+                                                    break;
+                                                case "10001":
+                                                    td.textContent = "Refined Metal";
+                                                    break;
+                                                case "10005":
+                                                    td.textContent = "Lithium";
+                                                    break;
+                                                case "90000":
+                                                    td.textContent = "Ancient Scroll";
+                                                    break;
+                                                case "20016":
+                                                    td.textContent = "Blueprint: 2.4Ghz Radio C1";
+                                                    break;
+                                                case "20008":
+                                                    td.textContent = "Blueprint: Ducted Fans C1";
+                                                    break;
+                                                case "20024":
+                                                    td.textContent = "Blueprint: FSMD System on Chip C1";
+                                                    break;
+                                                case "10008":
+                                                    td.textContent = "Silicon";
+                                                    break;
+                                                case "10004":
+                                                    td.textContent = "Copper Wire";
+                                                    break;
+                                                case "20009":
+                                                    td.textContent = "Blueprint: Ducted Fans C2";
+                                                    break;
+                                                case "20001":
+                                                    td.textContent = "Blueprint: Lithium Polymer Cell C2";
+                                                    break;
+                                                case "20000":
+                                                    td.textContent = "Blueprint: Lithium Polymer Cell C1";
+                                                    break;
+                                                case "10003":
+                                                    td.textContent = "Rare-Earth Magnet";
+                                                    break;
+                                                case "30000":
+                                                    td.textContent = "Lithium Polymer Cell C1";
+                                                    break;
+                                                case "30008":
+                                                    td.textContent = "Ducted Fans C1";
+                                                    break;
+                                                case "30016":
+                                                    td.textContent = "2.4Ghz Radio C1";
+                                                    break;
+                                                case "30024":
+                                                    td.textContent = "FSMD System on Chip C1";
+                                                    break;
+                                                case "90001":
+                                                    td.textContent = "Artifact Base";
+                                                    break;
+                                                case "90002":
+                                                    td.textContent = "Artifact Side A";
+                                                    break;
+                                                case "90003":
+                                                    td.textContent = "Artifact Side B";
+                                                    break;
+                                                case "90004":
+                                                    td.textContent = "Artifact Side C";
+                                                    break;
+                                                case "90005":
+                                                    td.textContent = "Artifact Side D";
+                                                    break;
+                                                default:
+                                                    td.textContent = json[i][key];
+                                                    break;
+
+                                            }
+                                        } else {
+                                            td.textContent = json[i][key];
+                                        }
+                                        // td要素をtr要素の子要素に追加
+                                        tr.appendChild(td);
+
+                                    }
+                                }
+                                // tr要素をtable要素の子要素に追加
+                                table.appendChild(tr);
+                                // 生成したtable要素を追加する
+                                document.getElementById('maintable').appendChild(table);
+                            }
+                        }
+                    },
+                    error: function (data) {
+
+                        // Error
+                        alert("error");
+                        alert(JSON.stringify(data));
+                        $("#response").html(JSON.stringify(data));
+                    }
+                });
+            })
+        })
+    </script>
+    <style>
+        body{
+            background-color:rgb(0, 0, 0);
+            color: rgb(106, 212, 0);
+        }
+        div#paging {
+            text-align: center;
+            /* スクロールに対してページングボックスの位置を固定 */
+            position: fixed;
+            /* 位置を指定 */
+            bottom: 0;
+            right: 45%;
+        }
+
+        div#pagingbox {
+            background: rgb(0, 0, 0);
+        }
+
+        th {
+            /* ヘッダ背景塗りつぶし */
+            background: rgb(132, 132, 132);
+            color: rgb(106, 212, 0);
+            border: solid 1px;
+            width: auto;
+        }
+
+        button {
+            background: rgb(91, 91, 91);
+            color: rgb(106, 212, 0);            
+        }
+        
+        td {
+            /* 枠線を1本線指定 */
+            border: solid 1px;
+            width: auto;
+            background: rgb(0, 0, 0);
+            color: rgb(106, 212, 0);
+            text-align:center;
+        }
+
+        table {
+            /* 枠線を1本線指定 */
+            border: solid 1px;
+            border-collapse: collapse;
+            white-space: nowrap;
+        }
+
+        footer {
+            position: fixed;
+            width: 100%;
+            background-color: #C0C0C0;
+            padding: 15px 0;
+            bottom: 0;
+            /*下に固定*/
+        }
+    </style>
+
+</head>
+
+<body>
+    <form action="#" method="post">
+        <p>Wallet Address：<br>
+            <input type="text" name="address" id="address" >
+        </p>
+        <p><input type="button" value="Check DEFY Loot Items Log" id="button"></p>
+    </form>
+    <!--テーブル生成位置-->
+    <div id='maintable'></div>
+
+    <!--ページングボタン配置-->
+    <footer>
+        <div id="paging">
+            <table>
+                <tr>
+                    <tb><button id="prevbtn" type="button">
+                            << /button>
+                    </tb>
+                    <tb>
+                        <span id="currentpage">currentpage</span>
+                        /
+                        <span id="lastpage">lastpage</span>
+                    </tb>
+                    <tb><button id="nextbtn" type="button">></button></tb>
+                </tr>
+            </table>
+        </div>
+    </footer>
+
+    <script>// ページング機能
+        jQuery(function ($) {
+            var page = 0;
+            var displayrows = 30;// １ページ当たり表示する行の数
+
+            function draw() {// ページの表示
+                $('#lastpage').html(Math.ceil(($('tr').size() - 1) / displayrows));
+                $('#currentpage').html(page + 1);
+                $('tr').hide();
+                $('tr:first,tr:gt(' + page * displayrows + '):lt(' + displayrows + ')').show();// 変数を使用する場合は' +  + 'を忘れずに
+            }
+            $('#prevbtn').click(function () {// １ページ後進
+                if (page > 0) {
+                    page--;
+                    draw();
+                }
+            });
+            $('#nextbtn').click(function () {// １ページ前進
+                if (page < ($('tr').size() - 1) / displayrows - 1) {
+                    page++;
+                    draw();
+                }
+            });
+            draw();//初回表示
+        });
+                window.onload = function onLoad() {
+
+            var params = new URLSearchParams(window.location.search);
+
+            var target = document.getElementById("address");
+            if (params.has("address") == true) {
+                $("#address").val(params.get("address"));
+                document.getElementById("button").click();
+            }
+        }
+    </script>
+</body>
+
+</html>
