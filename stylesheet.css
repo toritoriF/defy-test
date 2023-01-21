@@ -4,7 +4,7 @@ body {
     font-family: helvetica;
 }
 table {
-    border: solid 1px;
+    border: solid 1px #4caf50;
     border-collapse: collapse;
     white-space: nowrap;
 }
@@ -23,10 +23,8 @@ th {
 
 /* mobile */
 @media screen and (max-width: 834px){
+
 table {
-	    border: solid 1px;
-    border-collapse: collapse;
-    white-space: nowrap;
     width: 95%;
     margin-left: auto;
     margin-right: auto;
@@ -37,5 +35,5 @@ table {
 /* Darkmode */
 @media (prefers-color-scheme: dark) {
 
-		}
+}
 }
