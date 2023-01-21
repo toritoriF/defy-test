@@ -46,8 +46,8 @@ input#address {
     background: linear-gradient(-135deg, #2f1e1e, #000000) fixed;
     box-shadow: 2px 2px #1a1a1a inset, -2px -2px #222222 inset;
 }
-::placeholder {
-    color: #525252;
+input::placeholder {
+    color: #444;
 }
 input#button {
     width: 55%;
