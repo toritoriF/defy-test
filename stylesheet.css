@@ -3,6 +3,9 @@ body {
     color: #ddd;
     font-family: helvetica;
 }
+#maintable {
+    margin-bottom: 70px;
+}
 table {
     border-collapse: collapse;
     white-space: nowrap;
