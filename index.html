@@ -53,7 +53,7 @@
                                         if (key == "timeStamp") {
                                             var time = new Date(json[i][key] * 1000)
                                             // td要素内にテキストを追加
-                                            td.textContent = String(time.getFullYear()) + "/" + String(time.getMonth() + 1) + "/" + String(time.getDate()) + " " + String(time.getHours()) + ":" + String(time.getMinutes())";
+                                            td.textContent = String(time.getFullYear()) + "/" + String(time.getMonth() + 1) + "/" + String(time.getDate()) + " " + String(time.getHours()) + ":" + String(time.getMinutes());
                                         }
                                         else if (key == "tokenID") {
                                             // td要素内にテキストを追加
