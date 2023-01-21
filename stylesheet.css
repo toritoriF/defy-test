@@ -13,15 +13,16 @@ tr {
     padding: 10px;
 }
 td {
-    border: solid 1px;
+    border: solid 1px #355c36;
     width: auto;
     padding: 8px 8px 8px 12px;
 }
 th {
     background: #212121;
     font-weight: bold;
-    border: solid 1px #4caf50;
+    border: solid 1px #355c36;
     padding: 8px;
+    font-size: 12px;
 }
 /* mobile */
 @media screen and (max-width: 834px){
