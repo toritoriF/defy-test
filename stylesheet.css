@@ -22,10 +22,15 @@ th {
     font-weight: bold;
     border: solid 1px;
     padding: 8px;
-    font-size: 1.2em;
+    font-size: 12px;
 }
 /* mobile */
 @media screen and (max-width: 834px){
+    
+body {
+    font-size: 12px;
+}
+    
 table {
     width: 95%;
     margin-left: auto;
