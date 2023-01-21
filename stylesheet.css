@@ -31,10 +31,6 @@ td {
 body {
     font-size: 12px;
 }
-td {
-    border: solid 1px #458747a6;
-    border: solid 1px #4587472e;
-} 
 table {
     width: 95%;
     margin-left: auto;
