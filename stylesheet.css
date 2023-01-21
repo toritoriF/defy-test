@@ -21,7 +21,7 @@ th {
     font-size: 1.2em;
 }
 
-/*********	〜840px	*/
+/* mobile */
 @media screen and (max-width: 834px){
 table {
 	    border: solid 1px;
@@ -34,7 +34,8 @@ table {
 
 
 	
-/********* 834px〜481px（ダークモード）tyudm */	
+/* Darkmode */
 @media (prefers-color-scheme: dark) {
 
 		}
+}
