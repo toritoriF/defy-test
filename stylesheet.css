@@ -55,9 +55,9 @@ input#button {
     font-size: 12px;
     color: #fff;
     border: inherit;
-    box-shadow: 2px 2px 0px #595959, -2px -2px 0px #9f9f9f, -2px 2px 0px #4b4b4b, 2px -2px 0px #b9b9b999;
-    background: linear-gradient(5deg, #000000, #2b2b2b);}
-
+    box-shadow: 2px 2px 0px #595959, -2px -2px 0px #9f9f9f, -1px 2px 0px #4b4b4b, 1px -2px 0px #4b4b4b;
+    background: linear-gradient(5deg, #000000, #2b2b2b);
+}
 
 /*** footer */
 footer {
