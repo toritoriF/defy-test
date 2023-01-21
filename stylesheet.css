@@ -36,7 +36,5 @@ table {
 	
 /********* 834px〜481px（ダークモード）tyudm */	
 @media (prefers-color-scheme: dark) {
-    background-color: #ddd;
-
 
 		}
