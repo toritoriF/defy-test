@@ -1,0 +1,20 @@
+/*********	840px〜481px	tyu	*/
+@media screen and (max-width: 834px){
+table {
+		font-family: Arial, 'Helvetica', sans-serif;
+}
+.body{
+	background: #f6f6f6;
+}
+	
+	
+/********* 834px〜481px（ダークモード）tyudm */	
+@media (prefers-color-scheme: dark) {
+.content {
+	background: #151515;
+}
+.body {
+	background: #1a1a1a;
+}
+
+		}
