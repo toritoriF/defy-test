@@ -32,6 +32,9 @@ td {
 form {
     text-align: center;
 }
+.wa {
+    margin: 16px 0 -12px;
+}
 input#address {
     width: 80%;
     margin: 8px 8px 6px 8px;
