@@ -132,6 +132,23 @@
                                         } else {
                                             td.textContent = json[i][key];
                                         }
+                                        
+                                        // HTMLのテーブル要素を取得
+var table = document.getElementById("tokenValue");
+
+// tr要素を取得
+var rows = table.getElementsByTagName("tr");
+
+// tokenValueの列にclass名を付与
+for (var i = 0; i < rows.length; i++) {
+    var cells = rows[i].getElementsByTagName("td");
+    for (var j = 0; j < cells.length; j++) {
+        if(cells[j].dataset.tokenValue == "tokenValue"){
+            cells[j].classList.add("newClass");
+        }
+    }
+}
+                                        
                                         // td要素をtr要素の子要素に追加
                                         tr.appendChild(td);
 
