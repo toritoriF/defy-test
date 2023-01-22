@@ -27,10 +27,10 @@ input#button {
     margin: 4px 0;
     padding: 16px;
     font-size: 12px;
-    color: #000;
+    color: #07b2a2;
     border: inherit;
-    box-shadow: -1px -1px #dadada, 1px 1px #dddddd, -1px 1px #14c500, 1px -1px #cb87f5;
-    background: linear-gradient(172deg, #ffffff, #e2e2e2);
+    box-shadow: -1px -1px #888888, 1px 1px #3d3d3d, -1px 1px #009688, 1px -1px #009688;
+    background: linear-gradient(5deg, #000000, #2b2b2b);
 }
 
 /* table */
@@ -72,12 +72,6 @@ input#address {
 }
 input::placeholder {
     color: #474747;
-}
-input#button {
-    color: #fff;
-    border: inherit;
-    box-shadow: -1px -1px #888888, 1px 1px #3d3d3d, -1px 1px #106f05, 1px -1px #9355ba;
-    background: linear-gradient(5deg, #000000, #2b2b2b);
 }
 
 /* table - d */
