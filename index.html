@@ -172,6 +172,42 @@
     <footer>
     </footer>
 
+    <script>// ページング機能
+        jQuery(function ($) {
+            var page = 0;
+            var displayrows = 30;// １ページ当たり表示する行の数
+
+            function draw() {// ページの表示
+                $('#lastpage').html(Math.ceil(($('tr').size() - 1) / displayrows));
+                $('#currentpage').html(page + 1);
+                $('tr').hide();
+                $('tr:first,tr:gt(' + page * displayrows + '):lt(' + displayrows + ')').show();// 変数を使用する場合は' +  + 'を忘れずに
+            }
+            $('#prevbtn').click(function () {// １ページ後進
+                if (page > 0) {
+                    page--;
+                    draw();
+                }
+            });
+            $('#nextbtn').click(function () {// １ページ前進
+                if (page < ($('tr').size() - 1) / displayrows - 1) {
+                    page++;
+                    draw();
+                }
+            });
+            draw();//初回表示
+        });
+                window.onload = function onLoad() {
+
+            var params = new URLSearchParams(window.location.search);
+
+            var target = document.getElementById("address");
+            if (params.has("address") == true) {
+                $("#address").val(params.get("address"));
+                document.getElementById("button").click();
+            }
+        }
+    </script>
 </body>
 
 </html>
