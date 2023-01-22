@@ -17,10 +17,10 @@ input#address {
     padding: 14px 16px;
     font-size: 12px;
     border-radius: 4px;
-    color: #979797;
+    color: #7a7a7a;
     border: inherit;
     background: linear-gradient(-135deg, #e1e1e1, #f8f8f8) fixed;
-    box-shadow: 2px 2px #f2f2f2 inset, -2px -2px #e4e4e4 inset;
+    box-shadow: 2px 2px #f2f2f2 inset, -2px -2px #e7e7e7 inset;
 }
 input::placeholder {
     color: #444;
@@ -34,7 +34,7 @@ input#button {
     color: #000;
     border: inherit;
     box-shadow: -1px -1px #dadada, 1px 1px #dddddd, -1px 1px #14c500, 1px -1px #cb87f5;
-    background: linear-gradient(5deg, #ffffff, #dadada);
+    background: linear-gradient(172deg, #ffffff, #e2e2e2);
 }
 
 /* table */
