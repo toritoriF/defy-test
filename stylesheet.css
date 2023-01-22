@@ -44,7 +44,7 @@ th {
     background: #f7f7f7;
     font-weight: bold;
     border: solid 1px #f0f0f0;
-    padding: 8px;
+    padding: 12px;
     font-size: 12px;
 }
 tr {
@@ -53,7 +53,8 @@ tr {
 td {
     border: solid 1px #f0f0f0;
     width: auto;
-    padding: 8px 8px 8px 12px;
+    padding: 10px 4px;
+    text-align: center;
 }
 
 
