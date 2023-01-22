@@ -7,6 +7,10 @@ body {
 /* form */
 .wa {
     margin: 16px 0 -4px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient( 13deg, #2edb63 20%, #5498c2 40%, #33d81a 100%);
+    background-size: 32% 30%;
 }
 input#address {
     width: 20%;
