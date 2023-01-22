@@ -39,7 +39,15 @@
 
                         // tr要素をtable要素の子要素に追加
                         table.appendChild(tr);
-
+// tokenValueの列にclass名を付与
+for (var i = 0; i < rows.length; i++) {
+    var cells = rows[i].getElementsByTagName("td");
+    for (var j = 0; j < cells.length; j++) {
+        if(cells[j].dataset.tokenValue == "tokenValue"){
+            cells[j].classList.add("newClass");
+        }
+    }
+}
                         // テーブル本体を作成
                         for (var i = 0; i < json.length; i++) {
                             if (json[i]["contractAddress"] == "0x0b5cfed5efb6f831468b8b5b5321b71825a2aee0" && json[i]["from"] == "0x0000000000000000000000000000000000000000") {
@@ -145,15 +153,6 @@
                             }
                         }
                     },
-// tokenValueの列にclass名を付与
-for (var i = 0; i < rows.length; i++) {
-    var cells = rows[i].getElementsByTagName("td");
-    for (var j = 0; j < cells.length; j++) {
-        if(cells[j].dataset.tokenValue == "tokenValue"){
-            cells[j].classList.add("newClass");
-        }
-    }
-}
                     error: function (data) {
 
                         // Error
