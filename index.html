@@ -129,13 +129,11 @@ for (var i = 0; i < json.length; i++) {
                                                     break;
                                             }
 if (key == "tokenValue") {
-    // td要素を生成
     var td = document.createElement('td');
-    td.className = "tttvv";
-    td.classList.add("token-value");  // クラス名を追加
     td.textContent = json[i][key];
+    td.classList.add("token-value");
     tr.appendChild(td);
-}                            
+}                     
                                         } else {
                                             td.textContent = json[i][key];
                                         }
