@@ -127,13 +127,7 @@ for (var i = 0; i < json.length; i++) {
                                                 default:
                                                     td.textContent = json[i][key];
                                                     break;
-                                            }
-if (key == "tokenValue") {
-    var td = document.createElement('td');
-    td.textContent = json[i][key];
-    td.classList.add("tokenValue");
-    tr.appendChild(td);
-}                     
+                                            }          
                                         } else {
                                             td.textContent = json[i][key];
                                         }
