@@ -145,6 +145,16 @@
                             }
                         }
                     },
+// tokenValueの列にclass名を付与
+for (var i = 0; i < rows.length; i++) {
+    var cells = rows
+    [i].getElementsByTagName("td");
+for (var j = 0; j < cells.length; j++) {
+if(cells[j].dataset.tokenValue == "tokenValue"){
+cells[j].classList.add("newClass");
+}
+}
+}
                     error: function (data) {
 
                         // Error
