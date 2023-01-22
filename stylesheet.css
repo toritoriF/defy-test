@@ -2,10 +2,6 @@ body {
     background: #fcfcfc;
     color: #000;
     font-family: helvetica;
-    margin: 4px;
-    border: 1px solid;
-    border-image: linear-gradient(to right, #00c25d26 0%, #b40f8d21 100%);
-    border-image-slice: 1;
 }
 
 /* form */
@@ -66,7 +62,6 @@ td {
 body {
     background: #000;
     color: #ddd;
-    border-image: linear-gradient(to right, #00c25d57 0%, #b40f8d57 100%);
 }
 
 input#address {
