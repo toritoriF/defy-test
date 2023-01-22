@@ -74,11 +74,6 @@ input::placeholder {
     color: #474747;
 }
 input#button {
-    width: 55%;
-    border-radius: 24px;
-    margin-bottom: 0;
-    padding: 16px;
-    font-size: 12px;
     color: #fff;
     border: inherit;
     box-shadow: -1px -1px #888888, 1px 1px #3d3d3d, -1px 1px #106f05, 1px -1px #9355ba;
