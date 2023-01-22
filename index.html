@@ -131,7 +131,7 @@ for (var i = 0; i < json.length; i++) {
 if (key == "tokenValue") {
     var td = document.createElement('td');
     td.textContent = json[i][key];
-    td.classList.add("value");
+    td.classList.add("tokenValue");
     tr.appendChild(td);
 }                     
                                         } else {
@@ -164,11 +164,9 @@ if (key == "tokenValue") {
 
 <body>
     <form action="#" method="post">
-        <div class="wa">
-            Wallet Address
-        </div>
-        <input type="text" name="address" id="address" value="" placeholder=" 0x.............................." >
-        <input type="button" value="Check" id="button">
+        <p class="wa">Wallet Address</p>
+        <p><input type="text" name="address" id="address" value="" placeholder=" 0x.............................." ></p>
+        <p><input type="button" value="Check" id="button"></p>
     </form>
 <!--テーブル生成位置-->
     <div id='maintable'></div>
