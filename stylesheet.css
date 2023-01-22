@@ -11,9 +11,6 @@ body {
 /* form */
 .wa {
     margin: 16px 0 -4px;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-image: linear-gradient( 111deg, #548fb4 40%, #06b93dfa 50%, #1993a6 60%);
 }
 input#address {
     width: 20%;
@@ -72,12 +69,6 @@ body {
     border-image: linear-gradient(to right, #00c25d57 0%, #b40f8d57 100%);
 }
 
-/* form - d */
-.wa {
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-image: linear-gradient( 111deg, #0582cf 40%, #8ad2a0fa 50%, #208494 60%);
-}
 input#address {
     color: #a9a9a9;
     background: linear-gradient(-135deg, #1f1f1f, #0a0a0a) fixed;
