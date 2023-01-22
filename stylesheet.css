@@ -29,7 +29,7 @@ input#button {
     font-size: 12px;
     color: #000;
     border: inherit;
-    box-shadow: -1px -1px #dadada, 1px 1px #dddddd, -1px 1px #14c500, 1px -1px #cb87f5;
+    box-shadow: -1px -1px #eaeaea, 1px 1px #d6d6d6,
     background: linear-gradient(172deg, #ffffff, #e2e2e2);
 }
 
