@@ -87,7 +87,7 @@ input#address {
     box-shadow: 2px 2px #1a1a1a inset, -2px -2px #222222 inset;
 }
 input::placeholder {
-    color: #444;
+    color: #bebebe;
 }
 input#button {
     width: 55%;
