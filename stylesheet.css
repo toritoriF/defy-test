@@ -29,7 +29,7 @@ input#button {
     font-size: 12px;
     color: #07b2a2;
     border: inherit;
-    box-shadow: -1px -1px #888888, 1px 1px #3d3d3d, -1px 1px #009688, 1px -1px #009688;
+    box-shadow: -1px -1px #dadada, 1px 1px #dddddd, -1px 1px #009688, 1px -1px #009688;
     background: linear-gradient(172deg, #ffffff, #e2e2e2);
 }
 
@@ -69,6 +69,11 @@ input#address {
     color: #a9a9a9;
     background: linear-gradient(-135deg, #1f1f1f, #0a0a0a) fixed;
     box-shadow: 2px 2px #1a1a1a inset, -2px -2px #222222 inset;
+}
+input#button {
+    color: #07b2a2;
+    box-shadow: -1px -1px #888888, 1px 1px #3d3d3d, -1px 1px #009688, 1px -1px #009688;
+    background: linear-gradient(5deg, #000000, #2b2b2b);
 }
 input::placeholder {
     color: #474747;
