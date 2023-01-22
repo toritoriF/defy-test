@@ -1,30 +1,7 @@
 body {
-    background: #000;
-    color: #ddd;
+    background: #fcfcfc;
+    color: #000;
     font-family: helvetica;
-}
-
-/* table */
-table {
-    border-collapse: collapse;
-    white-space: nowrap;
-    color: #4caf50;
-    color: #a8a8a8;
-}
-th {
-    background: #191919;
-    font-weight: bold;
-    border: solid 1px #2c2c2c;
-    padding: 8px;
-    font-size: 12px;
-}
-tr {
-    padding: 10px;
-}
-td {
-    border: solid 1px #2c2c2c;
-    width: auto;
-    padding: 8px 8px 8px 12px;
 }
 
 /* form */
@@ -40,10 +17,10 @@ input#address {
     padding: 14px 16px;
     font-size: 12px;
     border-radius: 4px;
-    color: #a9a9a9;
+    color: #979797;
     border: inherit;
-    background: linear-gradient(-135deg, #1f1f1f, #0a0a0a) fixed;
-    box-shadow: 2px 2px #1a1a1a inset, -2px -2px #222222 inset;
+    background: linear-gradient(-135deg, #e1e1e1, #f8f8f8) fixed;
+    box-shadow: 2px 2px #f2f2f2 inset, -2px -2px #e4e4e4 inset;
 }
 input::placeholder {
     color: #444;
@@ -54,10 +31,33 @@ input#button {
     margin-bottom: 8px;
     padding: 16px;
     font-size: 12px;
-    color: #fff;
+    color: #000;
     border: inherit;
-    box-shadow: -1px -1px #888888, 1px 1px #3d3d3d, -1px 1px #106f05, 1px -1px #9355ba;
-    background: linear-gradient(5deg, #000000, #2b2b2b);
+    box-shadow: -1px -1px #dadada, 1px 1px #dddddd, -1px 1px #14c500, 1px -1px #cb87f5;
+    background: linear-gradient(5deg, #ffffff, #dadada);
+}
+
+/* table */
+table {
+    border-collapse: collapse;
+    white-space: nowrap;
+    color: #4caf50;
+    color: #000;
+}
+th {
+    background: #f0f0f0;
+    font-weight: bold;
+    border: solid 1px #d8d8d8;
+    padding: 8px;
+    font-size: 12px;
+}
+tr {
+    padding: 10px;
+}
+td {
+    border: solid 1px #d8d8d8;
+    width: auto;
+    padding: 8px 8px 8px 12px;
 }
 
 
