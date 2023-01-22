@@ -41,6 +41,7 @@ input#button {
 table {
     border-collapse: collapse;
     white-space: nowrap;
+    width: 100%;
     color: #4caf50;
     color: #000;
 }
