@@ -8,11 +8,8 @@
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
     <script type="text/javascript">
-        $(function () {
-            $("#response").html("Response Values");
-
-            $("#button").click(function () {
-                var url = "https://api.polygonscan.com/api?module=account&apikey=6H4TB6SFDM6K72KGM46VHXU8X51VM4KH6C&action=token1155tx&startblock=1&endblock=99999999&sort=desc&address=" + $("#address").val();
+   function getData() {
+            var url = "https://api.polygonscan.com/api?module=account&apikey=6H4TB6SFDM6K72KGM46VHXU8X51VM4KH6C&action=token1155tx&startblock=1&endblock=99999999&sort=desc&address=" + $("#address").val();
 
                 $.ajax({
                     type: 'get',
